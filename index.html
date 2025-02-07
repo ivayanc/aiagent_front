@@ -1173,13 +1173,6 @@
                                             </div>
                                         ` : ''}
 
-                                        ${aiReport.updated_development_status ? `
-                                            <div class="analysis-section">
-                                                <h4>Development Status</h4>
-                                                <p>${aiReport.updated_development_status}</p>
-                                            </div>
-                                        ` : ''}
-
                                         ${aiReport.updated_platforms && aiReport.updated_platforms.length > 0 ? `
                                             <div class="analysis-section">
                                                 <h4>Social Media Presence</h4>
@@ -1198,13 +1191,6 @@
                                                         </div>
                                                     `).join('')}
                                                 </div>
-                                            </div>
-                                        ` : ''}
-
-                                        ${aiReport.final_conclusion ? `
-                                            <div class="analysis-section">
-                                                <h4>Final Conclusion</h4>
-                                                <p>${aiReport.final_conclusion}</p>
                                             </div>
                                         ` : ''}
 
@@ -1227,6 +1213,20 @@
                                             <div class="analysis-section">
                                                 <h4>Token Analytics</h4>
                                                 <p>${aiReport.ticker_analytic}</p>
+                                            </div>
+                                        ` : ''}
+
+                                        ${aiReport.updated_development_status ? `
+                                            <div class="analysis-section">
+                                                <h4>Development Status</h4>
+                                                <p>${aiReport.updated_development_status}</p>
+                                            </div>
+                                        ` : ''}
+
+                                        ${aiReport.final_conclusion ? `
+                                            <div class="analysis-section">
+                                                <h4>Final Conclusion</h4>
+                                                <p>${aiReport.final_conclusion}</p>
                                             </div>
                                         ` : ''}
                                     </div>
